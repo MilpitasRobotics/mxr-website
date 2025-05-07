@@ -47,7 +47,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            jsdlkfjsld
+            test
           </a>
         </div>
       </main>
