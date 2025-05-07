@@ -1,0 +1,80 @@
+.gap{
+    padding-top: 120px;
+}
+.pad{
+    padding-top: 20px
+}
+
+  
+.side-min {
+display: inline-flex;
+gap: 5px;
+align-items: center; /* aligns text vertically */
+}
+
+.blog-layout {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+
+}
+.divider {
+background-color: #303d4c; /* match your dark bluish color */
+flex-shrink: 0;
+}
+
+@media (min-width: 769px){
+
+    .divider {
+        width: 5px;
+        height: auto;
+        align-self: stretch;
+      }
+}
+@media (max-width: 768px) {
+    .blog-layout {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .divider {
+      height: 5px;
+      width: 90%;
+      align-self: center;
+      margin: 20px 0;
+    }
+}
+
+.h1-simple{
+    color: white;
+    font-size: 75px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-fill-color: white;
+}
+
+.h2-simple{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-text-fill-color: white;
+}
+
+.h3-simple{
+    color: lightgray;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    -webkit-text-fill-color: lightgray;
+}

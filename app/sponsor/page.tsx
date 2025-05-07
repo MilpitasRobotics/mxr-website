@@ -9,10 +9,10 @@ import Contact from "@/components/parts/contact";
 import FadeInOnScroll from "@/components/tools/fade-in-on-scroll";
 import BlogCard from "@/components/parts/blog-cards";
 
-import "./css/navbar.css";
-import "./css/main.css";
-import "./css/blog-card.css";
-import "./css/endbar.css";
+import "../css/navbar.css";
+import "../css/main.css";
+import "../css/blog-card.css";
+import "../css/endbar.css";
 
 import Endbar from "@/components/parts/endbar";
 import SponsorUs from "@/components/parts/sponsor-us";
@@ -35,7 +35,7 @@ export default function Home() {
             </h1>
             <TypewriterEffect words={[{text:"Milpitas"},{text:"Xtreme"},{text:"Robotics"}]} className="h2" />
             <h3>
-              Hello World!!! 
+              Hello World! 
               We are a student-run robotics club from Milpitas High School. 
               We compete in international robotics competitions such as VEX and FTC.
               We are a group of diverse, fun, and passionate students who love STEM and robotics. 
@@ -64,9 +64,6 @@ export default function Home() {
           <img src="images/blog/teamPic2.webp"></img>
         </div>
       </div>
-      <div className='c'>
-      <TypewriterEffect words={[{text:"Check"},{text:"out"},{text:"our"},{text:"blog"},{text:"links!😊"}]} className="h2" />
-      </div> 
       <BlogCard></BlogCard>
       <SponsorUs></SponsorUs>
 

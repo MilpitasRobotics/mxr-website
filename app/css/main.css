@@ -1,0 +1,322 @@
+.container {
+    position: relative; /* Needed so children can be positioned absolutely */
+    width: 100%;
+    height: 100%;
+    background-color: #0f151f;
+  
+  }
+  .pad{
+    padding-top: 20px
+  }
+  
+  .sponsor-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    height: 500px;
+    margin:0px;
+    padding: 0px;
+  
+  }
+  
+  .side-img {
+    background-color: #26303f;
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 45vw;
+    max-width: 700px;
+    padding: 10px; /* optional for spacing around image */
+  }
+  
+  .side-img img {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    border-radius: 15px; /* optional, match or slightly less than container */
+    display: block;
+  }
+  
+  
+  .title{
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .contact {
+    background: #0c1017;
+    border: 4px solid #26303f;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+    
+  }
+  
+  .contact img{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+  }
+  .contact img:hover{
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s;
+  }
+  
+  .contact h4{
+    color: white;
+    font-size: 18px;
+    font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  .side {
+    display: flex;
+    gap: 40px;
+    width: fit-content;       /* make it only as wide as it needs */
+    padding: 0px;
+    margin: 0 auto;  
+    align-items: center;
+    min-height: 75vh;
+    font-size: 0;
+  }
+  
+  .gap{
+    padding-top: 120px;
+  
+  }
+  
+  .v{
+    padding: 20px;
+    max-width: 750px;
+    margin: 0px;
+    padding-top: 0px;
+  }
+  
+.vi{
+    margin:0;
+    padding: 20px;
+    max-width: 750px;
+    text-align: center;
+} 
+  
+.v-img{
+    display: inline-block;
+}
+  
+.c{
+  padding: 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.cover {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+
+}
+
+.left{
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start;
+}
+  
+.left img{
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  margin: 15px;
+  transition: width 0.5s, height 0.5s;
+  
+}
+
+.left img:hover{
+  width: 180px;
+  height: 180px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.left h1{
+  background: none;  
+  font-size: 120px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-text-fill-color: white;
+
+  margin: 15px
+}
+.left h2{
+  background: none;  
+  font-size: 100px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  margin: 15px
+}
+  
+h1{
+  background: linear-gradient(90deg, rgb(98, 111, 248),  rgba(130, 243, 245, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  font-size: 140px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1.1;    /* Adjust to make the text height tighter */
+
+  
+}
+
+.h1-simple{
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-text-fill-color: white;
+}
+
+.h2{
+    color: white;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+    -webkit-text-fill-color: white;
+}
+.p{
+  color: white;
+  font-size: 25px;
+  margin: 0px;
+  padding: 0px;
+  font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+  -webkit-text-fill-color: white;
+}
+
+h2{
+  color: white;
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+  font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+  -webkit-text-fill-color: white;
+  font-weight: bold;
+}
+  
+  h3{
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;;
+    font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+    font-weight: normal;
+    line-height: 1.7;
+  
+  }
+  
+table{
+  padding: 10px;
+  border-spacing: 6px;
+  border-radius: 10px;
+  background-color: #26303f;
+  margin: 0;
+  width: 400px;
+}
+  
+tr{
+  text-align: center;
+  
+}
+tr:nth-child(even){background-color: #0c1017;}
+tr:nth-child(odd){background-color: #0c1017;}
+
+
+th{
+  color: white;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+
+}
+  
+td{
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  line-height: 1.7;
+
+}
+
+hr{
+  margin-top: 40px;
+  height: 10px;
+  border-width: 0px;
+  color: #26303f;
+  background-color: #26303f;
+
+  width: 80vw;
+}
+  
+@media (max-width: 1200px) {
+  .gap{
+    padding-top: 140px;
+  }
+  .side {
+    margin-top: 20px;
+    flex-direction: column;
+    
+  }
+  .side-img{
+    width: 80vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .v{
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+}
+@media (max-width: 800px){
+  h1{
+    font-size: 100px;
+  }
+  .h2{
+    font-size:30px
+  }
+  h3{
+    font-size: 14px;
+  }
+
+}

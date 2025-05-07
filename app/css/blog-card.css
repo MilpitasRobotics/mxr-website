@@ -1,0 +1,235 @@
+
+.class-row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .class-column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+  
+    min-height: 200px;
+  }
+  
+  .class-card {
+    position: relative;
+    height: 95%;
+    margin: 10px;
+    background-image: radial-gradient(circle, #1e262f, #0c1017); /* dark to lighter center */
+    transition: background-image 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    overflow: hidden;
+    border: 6px solid #242d387a;
+  }
+  
+  .class-card:hover{
+    background-image: radial-gradient(circle, #242d38, #0c1017); /* dark to lighter center */
+    transition: background-image 0.5s ease-in-out;
+  
+  }
+  
+  /* h2 underline expand from center */
+  .class-card h2 {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .class-card h2::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.4s ease;
+  }
+  
+  .class-card:hover h2::after {
+    transform: translateX(-50%) scaleX(1);
+  }
+  
+  
+  .class-card img{
+    height: auto;
+    width: 250px;
+    border-radius: 100px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: height 0.5s, width 0.5s, border-radius 0.5s;
+  }
+
+  
+  .class-card p{
+    color: lightgray;
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+    font-weight: normal;
+  }
+  
+  
+  @media screen and (max-width: 1200px) {
+    .class-column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .class-column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+.blog-row{
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 8px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.blog-column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  
+  
+    min-height: 200px;
+}
+.blog-card {
+    position: relative;
+    height: 95%;
+    margin: 10px;
+    background-image: radial-gradient(circle, #1e262f, #0c1017);
+    transition: background-image 0.5s ease-in-out;
+    border-radius: 25px;
+    padding: 0px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+    border: 4px solid #303d4c;
+    transition: border 0.3s ease-in;
+
+  }
+/*every blog image should be 836 x 627*/
+.blog-card:hover{
+    border: 4px solid #d9dee4;
+    transition: border 0.3s ease-in;
+}
+
+.blog-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--overlay-color);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.blog-card:hover::before {
+  --overlay-color: rgba(0, 0, 0, 0.363); /* darken on hover */
+}
+
+.blog-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-card:hover img {
+  filter: blur(0.5px); /* subtle blur */
+}
+
+.blog-card h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* centers the h2 */
+  z-index: 2;
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  pointer-events: none; /* prevents hover blocking */
+  font-family: IBM Plex Mono,IBM Plex Mono Fallback;
+  font-weight: bold;
+  text-align: center;
+}
+  
+.blog-card h2::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.4s ease;
+}
+  
+.blog-card:hover h2::after {
+    transform: translateX(-50%) scaleX(1);
+}
+  
+  
+@media screen and (max-width: 1200px) {
+    .blog-column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .blog-column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 1200px) and (min-width: 801px) {
+    .blog-row .blog-column:nth-child(3) {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
