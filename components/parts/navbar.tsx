@@ -21,7 +21,6 @@ export function NavbarDemo() {
           <ul className="nav-links">
             <li><a href="/vex">VEX</a></li>
             <li><a href="/ftc">FTC</a></li>
-            <li><a href="/frc">FRC</a></li>
             <li><a href="/blog">Blog🙂</a></li>
             <li><a href="/mars">M.A.R.S.🚀</a></li>
           </ul>

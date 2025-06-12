@@ -8,6 +8,7 @@ import { TypewriterEffect } from "@/components/tools/typewriter-effect";
 import Contact from "@/components/parts/contact";
 import FadeInOnScroll from "@/components/tools/fade-in-on-scroll";
 import BlogCard from "@/components/parts/blog-cards";
+import BlogCard2 from "@/components/parts/blog-cards-2";
 
 import "../css/navbar.css";
 import "../css/main.css";
@@ -31,6 +32,8 @@ export default function Home() {
         <TypewriterEffect words={[{text:"Check"},{text:"out"},{text:"our"},{text:"blog"},{text:"links!😊"}]} className="h2" />
       </div> 
       <BlogCard></BlogCard>
+      <BlogCard2></BlogCard2>
+
       <SponsorUs></SponsorUs>
       <div className="pad"></div>
       <Endbar/>

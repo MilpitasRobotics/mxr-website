@@ -4,13 +4,12 @@ import { TypewriterEffect } from "../tools/typewriter-effect";
 function BlogCard(){
     return (
         <div>
-            
             <div className='blog-row'>
             <div className='blog-column'>
                 <a href="/blog/steam-showcase">
                 <div className='blog-card'>
                 <h2>Steam Showcase</h2>
-                <img src="images/blog/SteamShowcase.png"></img>
+                <img src="images/blog/steamShowcase2025/SteamShowcase.png"></img>
                 </div>
                 </a>
                 

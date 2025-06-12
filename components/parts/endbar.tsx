@@ -55,7 +55,7 @@ function Endbar() {
 
       <div className="bottom">
         <div className="bottom-side">
-          <img src="images/icons/mascot.png" width="80" height="80"></img>
+          <img src="/images/icons/mascot.png" width="80" height="80"></img>
           <h1>MXR</h1>
         </div>
         <div className="pad"></div>

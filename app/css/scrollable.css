@@ -1,9 +1,8 @@
 .gallery-outer {
-display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 320px;
-width: 100%;
+  position: sticky;
+  top: 100px; /* adjust to your preference */
+  align-self: flex-start; /* ensures it doesn't stretch */
+  max-width: 325px;
 }
 
 .gallery-title {
@@ -49,13 +48,29 @@ text-align: center;
   
   .gallery-wrapper {
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     position: relative;
   }
+  .scroll-bottom-arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    color: white;
+    transition: color 0.3s ease;
+  }
   
+  .scroll-bottom-arrow.disabled {
+    color: gray;
+    pointer-events: none;
+  }
   
   /* Gallery Title */
   .gallery-title {

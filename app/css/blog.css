@@ -4,7 +4,57 @@
 .pad{
     padding-top: 20px
 }
+.responsive-image {
+width: 100%;
+height: auto;
+max-height: 700px;
+object-fit: contain;
+margin-top: 25px;
+margin-bottom: 25px;
+border-radius: 20px !important;
+}
 
+.responsive-image-1{
+  width: 100%;
+  height: auto;
+  max-height: 750px;
+  object-fit: contain;
+  margin-top: 25px;
+  border-radius: 20px;
+
+  margin-bottom: 25px;
+  filter: saturate(1.25) contrast(1);
+}
+
+@media (max-width: 768px) {
+    .responsive-image {
+        max-height: 400px;
+        border-radius: 20px !important;
+
+
+    }
+}
+.blog-paragraph {
+    color: white;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+  }
+  .image-row {
+    display: flex;
+    justify-content: center; /* centers the images */
+    gap: 20px; /* space between images */
+    flex-wrap: wrap; /* allow stacking on small screens */
+    margin-top: 20px;
+  }
+  .row-img {
+    max-width: 100%;
+    width: 45%; /* adjust this as needed */
+    height: auto;
+    border-radius: 12px; /* optional for rounded corners */
+  }
   
 .side-min {
 display: inline-flex;
