@@ -1,4 +1,5 @@
 "use client";
+import { images } from '../scrollableData'; // adjust path as needed
 
 import { IBM_Plex_Mono } from "next/font/google";
 import React from "react";
@@ -23,35 +24,32 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export default function Home() {
-  const images = [
-    { src: "/images/blog/ferrisWheel.png", alt: "Hoco Ferris Wheel", link: "https://example.com/ferris" },
-    { src: "/images/blog/ferrisWheel.png", alt: "Downtown Lights", link: "https://example.com/downtown" },
-    { src: "/images/blog/ferrisWheel.png", alt: "Concert Night", link: "https://example.com/concert" },
-    { src: "/images/blog/ferrisWheel.png", alt: "City Bridge", link: "https://example.com/bridge" },
-  ];
-
   return (
     <main className="pt-10 flex min-h-screen flex-col items-center justify-between bg-#0F151F" style={{ backgroundColor: "#0F151F" }}>
       <div className="gap"></div>
 
       <div className="blog-layout">
         <div className="body">
-          <div className="h1-simple">Vex RookieComp</div>
+          <div className="h1-simple">VEX 1669Y wins championship!</div>
           <div className="side-min">
-            <div className="h2-simple">Written by: lskdjfklsd</div>
-            <div className="h3-simple">- July 26th 2025</div>
+            <div className="h2-simple">Written by: Justin Chung</div>
+            <div className="h3-simple">- July 13th 2025</div>
           </div>
+          <img
+            src="/images/blog/vexRookieComp/main.png"
+            alt="Animated"
+            className="responsive-image"
+          />
 
-          {/* Your blog text content */}
-          <p style={{ color: "white", marginTop: "20px" }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula...
-          </p>
+          
+          
+          
         </div>
         <div className="divider" />
 
         <ImageGallery images={images} />
       </div>
-
+      <div className='gap'></div>
       <SponsorUs />
       <div className="pad"></div>
       <Endbar />

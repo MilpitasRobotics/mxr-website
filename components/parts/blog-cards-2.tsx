@@ -9,16 +9,16 @@ function BlogCard2(){
                 <a href="/blog/dumpster-dive">
                 <div className='blog-card'>
                 <h2>MXR Dumpster Dive???</h2>
-                <img src="images/blog/dumpsterDive/harish.png"></img>
+                <img src="images/blog/dumpsterDive/harish.webp"></img>
                 </div>
                 </a>
                 
             </div>
             <div className='blog-column'>
-                <a href="/blog/go-kart">
+                <a href="/blog/go-kart-1">
                     <div className='blog-card'>
                     <h2>Go-kart part 1</h2>
-                    <img src="images/blog/go-kart/main.png"></img>
+                    <img src="images/blog/goKart1/main.webp"></img>
                     </div>
                 </a>
                 
@@ -39,7 +39,7 @@ function BlogCard2(){
                 <a href="/blog/vex-rookie-comp">
 
                 <div className='blog-card'>
-                <h2>Vex 1669Y first comp!</h2>
+                <h2>Vex 1669Y NorCal Silicon Valley Tourney!</h2>
                 <img src="images/blog/vexRookieComp/main.png"></img>
                 </div>
                 </a>
