@@ -40,7 +40,7 @@ export default function Home() {
             alt="Animated"
             className="responsive-image"
           />
-
+          
           
           
           
