@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "20.19.1",
+    "@types/react": "19.1.8",
     "@types/react-dom": "^19",
     "@types/tailwindcss": "^3.0.11",
     "@types/three": "^0.176.0",
@@ -31,6 +31,6 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "typescript": "5.8.3"
   }
 }

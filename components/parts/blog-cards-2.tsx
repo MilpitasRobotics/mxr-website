@@ -46,18 +46,18 @@ function BlogCard2(){
                 
             </div>
             <div className='blog-column'>
-                <a href="/blog/sdlkj">
+                <a href="/blog/may-mars">
                 <div className='blog-card'>
-                <h2>NA</h2>
-                <img src="images/blog/vexStates/main.png"></img>
+                <h2>May Mars</h2>
+                <img src="/images/blog/mayMARS/mayMARS.webp"></img>
                 </div>
                 </a>
             </div>
             <div className='blog-column'>
                 <a href="/blog/vex-worlds">
                 <div className='blog-card'>
-                <h2>NA</h2>
-                <img src="images/blog/vexWorlds.png"></img>
+                <h2>Vex States</h2>
+                <img src="/images/vex/overUnder.webp"></img>
                 </div>
                 </a>
             </div>

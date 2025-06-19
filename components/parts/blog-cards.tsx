@@ -28,7 +28,7 @@ function BlogCard(){
 
                 <div className='blog-card'>
                 <h2>FTC Sunnyvale comp</h2>
-                <img src="images/blog/SunnyvaleComp.png"></img>
+                <img src="images/ftc/ftcBot.png"></img>
                 </div>
                 </a>
             </div>
